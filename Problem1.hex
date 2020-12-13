@@ -1,0 +1,27 @@
+//Blinking LED every 0.5 Seconds
+#include <mega16.h>
+static unsigned int time_counter;
+interrupt [TIM0_OVF] void timer0_ovf_isr(void)
+{
+  TCNT0 = 31;
+  ++ time_counter;
+  if (time_counter==833)
+  {
+    PORTC.0 = (PORTC.0 ^ 1);
+    time_counter = 0;
+  }
+ }
+ 
+ void main(void)
+ {
+  DDRC = 0x01;
+  TCCR0 = 0x02;
+  TCNT0 = 31;
+  TIMSK = 0x01;
+  #asm("sei")
+  while(1)
+  {
+    ;
+  }
+ }
+  
