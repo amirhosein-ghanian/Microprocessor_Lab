@@ -3,9 +3,9 @@
 static unsigned int time_counter;
 interrupt [TIM0_OVF] void timer0_ovf_isr(void)
 {
-  TCNT0 = 31;
+  TCNT0 = 56;
   ++ time_counter;
-  if (time_counter==833)
+  if (time_counter==3759)
   {
     PORTC.0 = (PORTC.0 ^ 1);
     time_counter = 0;
