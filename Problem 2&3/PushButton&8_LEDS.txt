@@ -1,0 +1,98 @@
+#include <mega16.h>
+#include <delay.h>
+
+
+#define TurnOn 1
+#define TurnOff 0
+
+#define Light_0 PORTB.0
+#define Light_1 PORTB.1
+#define Light_2 PORTB.2
+#define Light_3 PORTB.3
+#define Light_4 PORTB.4
+#define Light_5 PORTB.5
+#define Light_6 PORTB.6
+#define Light_7 PORTB.7
+
+
+void main(void)
+{
+    DDRA = 0x00;
+	DDRB = 0xff;
+    PINA = 0x00;
+    PORTB = 0x00;
+    #asm("sei")
+    
+    while (1)
+	{
+        if(PINA.0==TurnOn)
+        {
+            Light_0 = TurnOn;
+            delay_ms(100);
+            Light_0 = TurnOff;
+			
+            Light_1 = TurnOn;
+            delay_ms(200);
+            Light_1 = TurnOff;
+
+            Light_2 = TurnOn;
+            delay_ms(200);
+            Light_2 = TurnOff;
+
+            Light_3 = TurnOn;
+            delay_ms(200);
+            Light_3 = TurnOff;
+
+            Light_4 = TurnOn;
+            delay_ms(200);
+            Light_4 = TurnOff;
+
+            Light_5 = TurnOn;
+            delay_ms(200);
+            Light_5 = TurnOff;
+
+            Light_6 = TurnOn;
+            delay_ms(200);
+            Light_6 = TurnOff;
+
+            Light_7 = TurnOn;
+            delay_ms(200);
+            Light_7 = TurnOff;
+
+            Light_6 = TurnOn;
+            delay_ms(200);
+            Light_6 = TurnOff;
+
+            Light_5 = TurnOn;
+            delay_ms(200);
+            Light_5 = TurnOff;
+
+            Light_4 = TurnOn;
+            delay_ms(200);
+            Light_4 = TurnOff;
+
+            Light_3 = TurnOn;
+            delay_ms(200);
+            Light_3 = TurnOff;
+
+            Light_2 = TurnOn;
+            delay_ms(200);
+            Light_2 = TurnOff;
+
+            Light_1 = TurnOn;
+            delay_ms(200);
+            Light_1 = TurnOff;
+
+            Light_0 = TurnOn;
+            delay_ms(200);
+            Light_0 = TurnOff;
+            
+        }
+		else 
+		{
+            
+            PORTB =0x00;
+            
+        }
+    }
+}
