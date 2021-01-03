@@ -1,0 +1,10 @@
+VERSION:3 SOURCE_TIMESTAMP:5223A953
+NODE:I LEVEL:0 LINE:24 "F:\codevision\inc\mega16.h"
+NODE:I LEVEL:0 LINE:25 "F:\codevision\inc\alcd.h"
+NODE:V LEVEL:0 LINE:27 "X_Length -> R4,R5"
+NODE:V LEVEL:0 LINE:28 "Y_Length -> R6,R7"
+NODE:V LEVEL:0 LINE:29 "Timer_OF_Counter -> R8,R9"
+NODE:V LEVEL:0 LINE:30 "Letter_Position -> R10,R11"
+NODE:V LEVEL:0 LINE:32 "Letters -> RAM:????"
+NODE:F LEVEL:0 LINE:34 "timer0_ovf_isr(void)"
+NODE:F LEVEL:0 LINE:67 "main(void)"
