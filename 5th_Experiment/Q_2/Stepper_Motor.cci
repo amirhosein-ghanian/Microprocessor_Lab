@@ -1,0 +1,7 @@
+VERSION:3 SOURCE_TIMESTAMP:522C9124
+NODE:I LEVEL:0 LINE:23 "F:\codevision\inc\mega16.h"
+NODE:V LEVEL:0 LINE:25 "Timer_Zero_OF -> R4,R5"
+NODE:V LEVEL:0 LINE:26 "Begin_Time -> R6,R7"
+NODE:V LEVEL:0 LINE:27 "Rotatation -> R8,R9"
+NODE:F LEVEL:0 LINE:29 "timer0_ovf_isr(void)"
+NODE:F LEVEL:0 LINE:72 "main(void)"
