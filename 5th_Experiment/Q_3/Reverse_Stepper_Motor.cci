@@ -1,0 +1,6 @@
+VERSION:3 SOURCE_TIMESTAMP:522C9363
+NODE:I LEVEL:0 LINE:24 "F:\codevision\inc\mega16.h"
+NODE:V LEVEL:0 LINE:26 "Rotation -> R4,R5"
+NODE:V LEVEL:0 LINE:27 "Direction -> R6,R7"
+NODE:F LEVEL:0 LINE:30 "timer0_ovf_isr(void)"
+NODE:F LEVEL:0 LINE:86 "main(void)"
